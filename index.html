@@ -45,6 +45,8 @@
   .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--text);font-family:inherit}
   .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
   @media(max-width:860px){.links{display:none}}
+  @media(max-width:620px){.navbtns .btn{padding:9px 12px;font-size:13px}}
+  @media(max-width:470px){.navbtns .btn.legal{display:none}}
 
   .hero{padding:92px 0 72px;position:relative;overflow:hidden}
   .hero .glow{position:absolute;inset:auto 0 -45% 0;height:540px;background:radial-gradient(60% 60% at 50% 0%,color-mix(in srgb,var(--brand) 26%,transparent),transparent 70%);pointer-events:none}
@@ -90,8 +92,9 @@
       <a href="#studio">Studio</a>
       <a href="#careers">Careers</a>
     </nav>
-    <div style="display:flex;gap:10px">
-      <a class="btn" href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+    <div class="navbtns" style="display:flex;gap:10px">
+      <a class="btn legal" href="terms.html" target="_blank" rel="noopener">Terms of Service</a>
+      <a class="btn legal" href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
       <a class="btn primary" href="#careers">We're hiring</a>
     </div>
   </div>
@@ -182,7 +185,7 @@
     <div>&copy; 2026 Wellcom Technologies LTD. All game titles and trademarks are property of their respective owners.</div>
     <nav>
       <button class="theme" id="t">Theme</button>
-      <a href="#craft">How we build</a><a href="#studio">Studio</a><a href="#careers">Careers</a><a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+      <a href="#craft">How we build</a><a href="#studio">Studio</a><a href="#careers">Careers</a><a href="terms.html" target="_blank" rel="noopener">Terms of Service</a><a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
     </nav>
   </div>
 </footer>
