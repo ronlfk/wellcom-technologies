@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wellcom Technologies LTD</title>
-<meta name="description" content="Wellcom Technologies LTD — a game studio building live multiplayer worlds, and the tech that keeps them up.">
+<meta name="description" content="Wellcom Technologies LTD — a casual games studio building small games and the tools behind them.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,13 +17,12 @@
     --muted:#92a3ba;
     --brand:#6c5ce7;
     --brand-2:#19e3b1;
-    --code:#030711;
     --max:1160px;
     --radius:14px;
   }
   :root[data-theme="light"]{
     --bg:#ffffff; --panel:#f3f5fb; --line:#dfe4f0;
-    --text:#0b1326; --muted:#55627a; --brand:#5b46d6; --brand-2:#0b9e7d; --code:#0b1326;
+    --text:#0b1326; --muted:#55627a; --brand:#5b46d6; --brand-2:#0b9e7d;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -36,8 +35,6 @@
   h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:700;line-height:1.12;letter-spacing:-.02em;margin:0}
   a{color:inherit}
 
-  .ph{color:var(--muted);border-bottom:1px dashed currentColor;opacity:.8;font-style:normal}
-
   header{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   .nav{height:66px;display:flex;align-items:center;justify-content:space-between;gap:18px}
   .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:17px}
@@ -49,30 +46,12 @@
   .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
   @media(max-width:860px){.links{display:none}}
 
-  .hero{padding:92px 0 64px;position:relative;overflow:hidden}
+  .hero{padding:92px 0 72px;position:relative;overflow:hidden}
   .hero .glow{position:absolute;inset:auto 0 -45% 0;height:540px;background:radial-gradient(60% 60% at 50% 0%,color-mix(in srgb,var(--brand) 26%,transparent),transparent 70%);pointer-events:none}
-  .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--muted);background:var(--panel)}
-  .dot{width:7px;height:7px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 0 4px color-mix(in srgb,var(--brand-2) 22%,transparent)}
-  .hero h1{font-size:clamp(40px,6.4vw,72px);max-width:15ch;margin:26px 0 0}
+  .hero h1{font-size:clamp(40px,6.4vw,72px);max-width:15ch;margin:0}
   .hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
   .hero p{color:var(--muted);font-size:clamp(16px,2vw,19px);max-width:58ch;margin:22px 0 32px}
   .row{display:flex;gap:12px;flex-wrap:wrap}
-
-  /* games */
-  .games{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:58px}
-  @media(max-width:900px){.games{grid-template-columns:1fr}}
-  .game{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
-  .art{height:170px;position:relative;display:grid;place-items:center}
-  .art:after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 20% 0%,rgba(255,255,255,.22),transparent 60%)}
-  .art span{position:relative;z-index:2;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:13px;letter-spacing:.3em;color:rgba(255,255,255,.92);text-transform:uppercase}
-  .a1{background:linear-gradient(140deg,#6c5ce7,#2b2f77)}
-  .a2{background:linear-gradient(140deg,#19e3b1,#0b6b63)}
-  .a3{background:linear-gradient(140deg,#ff7a59,#8a2b4d)}
-  .game .body{padding:22px}
-  .game h3{font-size:19px;margin-bottom:8px}
-  .game p{color:var(--muted);font-size:14.5px;margin:0 0 14px}
-  .tags{display:flex;gap:8px;flex-wrap:wrap}
-  .tag{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
 
   section{padding:84px 0;border-top:1px solid var(--line)}
   .sec-head{max-width:62ch;margin-bottom:46px}
@@ -81,27 +60,12 @@
   .sec-head p{color:var(--muted);margin-top:14px}
 
   .grid3{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
-  .grid2{display:grid;gap:18px;grid-template-columns:repeat(2,1fr)}
-  @media(max-width:900px){.grid3,.grid2{grid-template-columns:1fr}}
+  @media(max-width:900px){.grid3{grid-template-columns:1fr}}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
   .card h3{font-size:19px;margin-bottom:10px}
   .card p{color:var(--muted);font-size:15px;margin:0}
   .ico{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:color-mix(in srgb,var(--brand) 20%,transparent);color:var(--brand-2);margin-bottom:16px}
   .ico svg{width:19px;height:19px}
-
-  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-  @media(max-width:760px){.metrics{grid-template-columns:repeat(2,1fr)}}
-  .metric{border:1px solid var(--line);border-radius:var(--radius);padding:24px}
-  .metric b{display:block;font-family:"Space Grotesk",sans-serif;font-size:32px;line-height:1.1}
-  .metric span{font-size:13px;color:var(--muted)}
-
-  .terminal{background:var(--code);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 70px -34px rgba(108,92,231,.7)}
-  .tbar{display:flex;gap:7px;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
-  .tbar i{width:11px;height:11px;border-radius:50%;background:#2c3550;display:block}
-  .tbody{padding:20px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px;line-height:1.9;color:#cfd9f5;overflow-x:auto}
-  .tbody .c{color:#6b7a99}
-  .tbody .g{color:#19e3b1}
-  .tbody .b{color:#9b8cff}
 
   .steps{display:grid;gap:0}
   .step{display:grid;grid-template-columns:54px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid var(--line);align-items:start}
@@ -109,14 +73,6 @@
   .step .n{font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--brand-2);border:1px solid var(--line);border-radius:10px;height:40px;display:grid;place-items:center}
   .step h3{font-size:18px;margin-bottom:6px}
   .step p{margin:0;color:var(--muted);font-size:15px}
-
-  .quote{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:40px}
-  .quote p{font-family:"Space Grotesk",sans-serif;font-size:clamp(19px,2.6vw,26px);line-height:1.4;margin:0 0 20px}
-  .quote footer{color:var(--muted);font-size:14px;padding:0;border:0}
-
-  .cta{padding:92px 0;text-align:center}
-  .cta h2{font-size:clamp(28px,4.6vw,46px);max-width:17ch;margin:0 auto}
-  .cta p{color:var(--muted);max-width:52ch;margin:18px auto 30px}
 
   footer.site{padding:44px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
   .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
@@ -130,11 +86,14 @@
   <div class="wrap nav">
     <a class="brand" href="#top"><span class="logo"></span>Wellcom <span style="color:var(--muted);font-weight:500">Technologies</span></a>
     <nav class="links">
-      <a href="#tech">Tech</a>
+      <a href="#craft">How we build</a>
       <a href="#studio">Studio</a>
       <a href="#careers">Careers</a>
     </nav>
-    <a class="btn primary" href="#careers">We're hiring</a>
+    <div style="display:flex;gap:10px">
+      <a class="btn" href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+      <a class="btn primary" href="#careers">We're hiring</a>
+    </div>
   </div>
 </header>
 
@@ -142,68 +101,66 @@
   <div class="hero">
     <div class="glow"></div>
     <div class="wrap">
-      <h1 style="margin-top:0">We build worlds that <em>never go down</em>.</h1>
-      <p>Wellcom Technologies LTD is a game studio making live multiplayer games for PC, console and mobile — and the netcode, matchmaking and live-ops platform that runs underneath them.</p>
+      <h1>Games that fit in <em>a coffee break</em>.</h1>
+      <p>Wellcom Technologies LTD is a casual games studio. We make puzzle, word and idle games for phones — and the tooling that lets a tiny team keep them fresh for years without a crunch calendar.</p>
       <div class="row">
-        <a class="btn primary" href="#tech">See the tech →</a>
+        <a class="btn primary" href="#craft">How we build →</a>
       </div>
-
     </div>
   </div>
 
-  <section id="tech">
+  <section id="craft">
     <div class="wrap">
       <div class="sec-head">
-        <div class="kicker">The technology</div>
-        <h2>The hard part isn't shipping. It's season four.</h2>
-        <p>Every system below started as something we needed for our own games, broke in production, and rebuilt properly.</p>
+        <div class="kicker">How we build</div>
+        <h2>The hard part of a simple game.</h2>
+        <p>Casual looks effortless from the outside, which is the whole point. Underneath, these are the systems that make it possible.</p>
       </div>
       <div class="grid3">
         <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7l3 3m4 0 3-3M7 17l3-3m4 0 3 3"/></svg></div>
-          <h3>Rollback netcode</h3>
-          <p>Deterministic simulation with client-side rollback, so a high-latency connection feels like a local match. Shipped across every title we run.</p>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></div>
+          <h3>Level tooling for designers</h3>
+          <p>Designers build, test and publish levels themselves, from a browser, without waiting on a build. The content pipeline is the product.</p>
         </div>
         <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h7"/></svg></div>
-          <h3>Matchmaking that waits less</h3>
-          <p>Skill, latency and party size balanced in one pass. We publish our real queue times at peak and off-peak, and we hold ourselves to them.</p>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Difficulty that reads the room</h3>
+          <p>A level that stops being fun is a level someone quits on. We tune pacing from real play data, per cohort, rather than guessing at a global curve.</p>
         </div>
         <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v10"/><path d="m8 10 4 4 4-4"/><path d="M4 20h16"/></svg></div>
-          <h3>Zero-downtime seasons</h3>
-          <p>New seasons roll out behind flags while matches are in progress — no maintenance window, no scheduled downtime, no "back at 6am".</p>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V9M10 18V5M16 18v-6M20 18V8"/></svg></div>
+          <h3>Experiments, not opinions</h3>
+          <p>Every change that touches the player ships behind a flag and gets measured. Arguments about a button colour end with a number, not a meeting.</p>
         </div>
         <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l5-6 4 4 4-7 5 5"/></svg></div>
-          <h3>Live-ops console</h3>
-          <p>Designers tune drop rates, events and pricing without a build. Every change is versioned, reviewed and reversible in one click.</p>
-        </div>
-        <div class="card">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.4 8-8 9-4.6-1-8-4-8-9V7z"/></svg></div>
-          <h3>Anti-cheat and trust</h3>
-          <p>Server-authoritative state plus behavioural detection. Bans are reviewed by humans, and every ban can be appealed to one.</p>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+          <h3>Offline first</h3>
+          <p>Trains, lifts and bad hotel wifi are where casual games actually get played. Everything works offline and reconciles when the signal comes back.</p>
         </div>
         <div class="card">
           <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M8 12h3M16 11v2"/></svg></div>
-          <h3>One account, every device</h3>
-          <p>Cross-progression and cross-play across PC, console and mobile, with platform entitlements reconciled in under a second.</p>
+          <h3>One save, every device</h3>
+          <p>Start a level on a phone, finish it on a tablet. Progress follows the player, and nothing is lost when they change handset.</p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12h6"/></svg></div>
+          <h3>Playable by more people</h3>
+          <p>Colour-blind safe palettes, one-handed layouts, scalable text and no puzzle that depends on reaction speed. Casual should mean casual.</p>
         </div>
       </div>
-
     </div>
   </section>
 
   <section id="studio">
     <div class="wrap">
       <div class="sec-head">
-        <div class="kicker">By the numbers</div>
-        <h2>A studio that has shipped, and kept shipping.</h2>
+        <div class="kicker">The studio</div>
+        <h2>How we work.</h2>
       </div>
       <div class="steps">
-        <div class="step"><div class="n">1</div><div><h3>Small teams, whole features</h3><p>Six to nine people own a feature end to end — design, client, server, analytics. No hand-off to a separate "live team" after launch.</p></div></div>
-        <div class="step"><div class="n">2</div><div><h3>Playable every Friday</h3><p>Everything builds and is playable internally at the end of every week, from the first prototype. Ideas that only work in a document get found out early.</p></div></div>
-        <div class="step"><div class="n">3</div><div><h3>Players in the room</h3><p>A rotating group of community members plays unreleased seasons under NDA and sits in the retro afterwards. They have killed features. Good.</p></div></div>
+        <div class="step"><div class="n">1</div><div><h3>Small teams, whole features</h3><p>A handful of people own a feature end to end — design, client, server, analytics. No hand-off to a separate live team after launch.</p></div></div>
+        <div class="step"><div class="n">2</div><div><h3>Playable every Friday</h3><p>Everything builds and is playable internally at the end of every week, from the first prototype. Ideas that only work on paper get found out early.</p></div></div>
+        <div class="step"><div class="n">3</div><div><h3>Players in the room</h3><p>We put unreleased builds in front of real players and sit in the retro afterwards. They have killed features of ours. Good.</p></div></div>
         <div class="step"><div class="n">4</div><div><h3>No crunch as a plan</h3><p>Scope gets cut before hours get added. We would rather move a launch than ask a team to work a weekend.</p></div></div>
       </div>
     </div>
@@ -214,19 +171,18 @@
       <div style="max-width:62ch">
         <div class="kicker">Careers</div>
         <h2 style="font-size:clamp(26px,3.4vw,36px)">We're hiring.</h2>
-        <p style="color:var(--muted)">Open roles in gameplay and engine engineering, backend, live-ops design, technical art, and player support.</p>
+        <p style="color:var(--muted)">Open roles in game design, client and backend engineering, live-ops, technical art, user research and player support. If you think a match-three can be a craft problem, we would like to talk.</p>
       </div>
     </div>
   </section>
-
-  </main>
+</main>
 
 <footer class="site">
   <div class="wrap foot">
-    <div>© 2026 Wellcom Technologies LTD. All game titles and trademarks are property of their respective owners.</div>
+    <div>&copy; 2026 Wellcom Technologies LTD. All game titles and trademarks are property of their respective owners.</div>
     <nav>
       <button class="theme" id="t">Theme</button>
-      <a href="#tech">Tech</a><a href="#studio">Studio</a><a href="#careers">Careers</a>
+      <a href="#craft">How we build</a><a href="#studio">Studio</a><a href="#careers">Careers</a><a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
     </nav>
   </div>
 </footer>
